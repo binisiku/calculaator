@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Lodging Price Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Dog Lodging Price Calculator</h2>
+
+    <form id="kennelForm">
+        <label for="dogSize">Select Dog Size:</label>
+        <select id="dogSize" required>
+            <option value="small">Small ($30/day)</option>
+            <option value="large">Large ($32/day)</option>
+        </select>
+
+        <label for="numDays">Number of Days:</label>
+        <input type="number" id="numDays" min="1" required>
+
+        <button type="button" onclick="calculatePrice()">Calculate Price</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
